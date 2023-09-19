@@ -23,11 +23,11 @@ from django.urls import include, path
 
 urlpatterns = [
     # Uncomment the next line to enable the admin:
+   
       path('admin/', admin.site.urls),
     
-      path('post/', include('post.urls')) 
+      path('articles/', include('articles.urls')) 
 
 
 
 ]
-app_name = 'post'
