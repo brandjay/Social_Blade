@@ -4,6 +4,7 @@
     <Name>socialbladev1</Name>
     <RootNamespace>socialbladev1</RootNamespace>
     <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+    <TestFramework>Pytest</TestFramework>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -36,6 +37,7 @@
     <Compile Include="post\migrations\__init__.py" />
     <Compile Include="post\models.py" />
     <Compile Include="post\tests.py" />
+    <Compile Include="post\urls.py" />
     <Compile Include="post\views.py" />
     <Compile Include="post\__init__.py" />
     <Compile Include="socialbladev1\__init__.py" />
@@ -44,7 +46,7 @@
     <Compile Include="socialbladev1\wsgi.py" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="post\templates\post\index.html" />
+    <Content Include="post\templates\post\topic_list.html" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
