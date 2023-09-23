@@ -20,14 +20,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path
 
-
 urlpatterns = [
     # Uncomment the next line to enable the admin:
-   
+      path('', include('articles.urls')),
+      
+      path('articles/', include('articles.urls')),
+
       path('admin/', admin.site.urls),
-    
-      path('articles/', include('articles.urls')) 
-
-
-
 ]
