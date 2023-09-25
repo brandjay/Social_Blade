@@ -31,6 +31,14 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="accounts\admin.py" />
+    <Compile Include="accounts\apps.py" />
+    <Compile Include="accounts\migrations\__init__.py" />
+    <Compile Include="accounts\models.py" />
+    <Compile Include="accounts\tests.py" />
+    <Compile Include="accounts\urls.py" />
+    <Compile Include="accounts\views.py" />
+    <Compile Include="accounts\__init__.py" />
     <Compile Include="articles\admin.py" />
     <Compile Include="articles\apps.py" />
     <Compile Include="articles\migrations\__init__.py" />
@@ -46,12 +54,17 @@
     <Compile Include="socialbladev1\wsgi.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="accounts\templates\accounts\login.html" />
     <Content Include="articles\templates\articles\article_detail.html" />
     <Content Include="articles\templates\articles\article_list.html" />
     <Content Include="articles\templates\articles\index.html" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="accounts\" />
+    <Folder Include="accounts\migrations\" />
+    <Folder Include="accounts\templates\" />
+    <Folder Include="accounts\templates\accounts\" />
     <Folder Include="articles\" />
     <Folder Include="articles\migrations\" />
     <Folder Include="articles\templates\" />
