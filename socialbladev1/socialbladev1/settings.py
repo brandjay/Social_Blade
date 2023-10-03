@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'articles',
     'accounts',
+    'registration',
 ]
 
 # Middleware framework
@@ -83,6 +84,8 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+#allows for custom user registration
+AUTH_USER_MODEL = 'registration.CustomUser'
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators

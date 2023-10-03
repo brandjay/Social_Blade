@@ -48,6 +48,15 @@
     <Compile Include="articles\views.py" />
     <Compile Include="articles\__init__.py" />
     <Compile Include="manage.py" />
+    <Compile Include="registration\admin.py" />
+    <Compile Include="registration\apps.py" />
+    <Compile Include="registration\forms.py" />
+    <Compile Include="registration\migrations\__init__.py" />
+    <Compile Include="registration\models.py" />
+    <Compile Include="registration\tests.py" />
+    <Compile Include="registration\urls.py" />
+    <Compile Include="registration\views.py" />
+    <Compile Include="registration\__init__.py" />
     <Compile Include="socialbladev1\__init__.py" />
     <Compile Include="socialbladev1\settings.py" />
     <Compile Include="socialbladev1\urls.py" />
@@ -58,6 +67,8 @@
     <Content Include="articles\templates\articles\article_detail.html" />
     <Content Include="articles\templates\articles\article_list.html" />
     <Content Include="articles\templates\articles\index.html" />
+    <Content Include="registration\templates\registration\base.html" />
+    <Content Include="registration\templates\registration\register.html" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
@@ -69,6 +80,10 @@
     <Folder Include="articles\migrations\" />
     <Folder Include="articles\templates\" />
     <Folder Include="articles\templates\articles\" />
+    <Folder Include="registration\" />
+    <Folder Include="registration\migrations\" />
+    <Folder Include="registration\templates\" />
+    <Folder Include="registration\templates\registration\" />
     <Folder Include="socialbladev1\" />
   </ItemGroup>
   <ItemGroup>

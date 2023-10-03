@@ -24,11 +24,12 @@ urlpatterns = [
     # Uncomment the next line to enable the admin:
      # path('', include('articles.urls')),
       path('', include('accounts.urls')),
+      path('registration/', include('registration.urls')),  # Use a dedicated path for registration
 
-      
+     # path('accounts/', include('registration.urls')),  # Include registration app's URLs
+
       path('articles/', include('articles.urls')),
       
-      path('', include('accounts.urls')),
 
       path('admin/', admin.site.urls),
 ]
